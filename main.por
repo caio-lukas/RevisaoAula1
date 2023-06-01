@@ -24,6 +24,8 @@ programa {
 	  
 	  caso "subtração": resultado = n1 - n2
 	  
+	  caso "multiplicação": resultado = n1 * n2
+	  
 	  caso contrario: escreva("Nenhuma operação selecionada. Abortando programa...")
 	}
 	
