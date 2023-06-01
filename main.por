@@ -8,12 +8,10 @@ programa {
     escreva("Digite dois números: ")
     leia(n1)
     leia(n2)
-
-    calculadora(n1, n2)
     
   }
   
-  funcao calculadora(real n1, real n2){
+  funcao inteiro calculadora(real n1, real n2){
 
 	cadeia operacao
     real resultado
@@ -23,7 +21,13 @@ programa {
 
 	escolha (operacao){
 	  caso "soma": resultado = n1 + n2
+	  
+	  caso "subtração": resultado = n1 - n2
+	  
+	  caso contrario: escreva("Nenhuma operação selecionada. Abortando programa...")
 	}
+	
+	retorne resultado
 
   }
   
